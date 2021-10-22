@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "Dowhile",
-    "slug": "Dowhile",
+    "name": "rnative",
+    "slug": "rnative",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#121214"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
