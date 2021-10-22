@@ -7,19 +7,24 @@ import {
 import AppLoading from 'expo-app-loading'
 import { Home } from './src/screens/Home';
 import { StatusBar } from 'expo-status-bar'
+import { AuthContextProvider } from './src/Hooks/auth';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     Roboto_400Regular,
     Roboto_700Bold,
   });
-  if(!fontsLoaded){
-    return<AppLoading />
+  if (!fontsLoaded) {
+    return <AppLoading />
   }
   return (
-    <>
-    <StatusBar style="light"/>
-    <Home />
-    </>
+    <AuthContextProvider>
+      <StatusBar 
+        style="light" 
+        translucent
+        backgroundColor="transparent"   
+      />
+      <Home />
+    </AuthContextProvider>
   );
 }
